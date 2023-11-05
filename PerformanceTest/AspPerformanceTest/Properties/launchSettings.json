@@ -1,0 +1,11 @@
+{
+	"profiles": {
+		"console": {
+			"commandName": "Project",
+			"commandLineArgs": "--urls http://127.0.0.1:5006",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Production"
+			}
+		}
+	}
+}

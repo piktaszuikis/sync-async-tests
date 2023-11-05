@@ -1,0 +1,9 @@
+.vs/
+*.user
+bin/
+obj/
+baseline/nim/beast
+baseline/rust/target
+bun.lockb
+node_modules/
+Cargo.lock
