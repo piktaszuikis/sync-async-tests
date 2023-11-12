@@ -126,13 +126,14 @@ function asptests {
 }
 
 # sync vs asynv
-#	simple get (thread count -> 1000)
+#	get + fast-db (thread count -> 1000)
 #	primes (num -> 100)
 #	fast-db (num -> 100)
 #	slow-db (num -> 100)
 
 echo "port;name;num;sync req/second;sync latency min (us);sync latency avg (us);sync latency max (us);sync latency stdev;async req/second;async latency min (us);async latency avg (us);async latency max (us);async latency stdev" > $ASP_FILE
-#asp-thread-test
+asp-thread-test
+
 for dotnet in 5 6 7 8
 do
 	asptests "30${dotnet}2"
